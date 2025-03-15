@@ -11,6 +11,6 @@
     "href": "index.html",
     "title": "Andy Ho",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 3\n\n[1] 4"
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 3\n\n[1] 4\n\n\n\nrunif(10)\n\n [1] 0.57286052 0.89899115 0.92367637 0.63138562 0.28522297 0.87114579\n [7] 0.18797538 0.09126978 0.23397419 0.50841905"
   }
 ]

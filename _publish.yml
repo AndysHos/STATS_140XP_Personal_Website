@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 4bff27aa-3256-4d75-8b18-04724e25baef
+      url: https://silver-madeleine-e07266.netlify.app
