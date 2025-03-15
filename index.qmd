@@ -1,15 +1,39 @@
 ---
 title: "Andy Ho"
+about:
+  template: trestles
+  image: profpic.jpg
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/AndysHos
+    - text: LinkedIn
+      url: https://www.linkedin.com/in/andy-ho-aa1729255/
+    - text: Email
+      url: "mailto:andyhorandy@gmail.com"
+toc: false
 ---
 
-This is a Quarto website.
+## Hello!
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+My name is **Andy Ho**, and I am currently a fourth-year undergraduate student at UCLA. I am currently pursuing a double major in both Mathematics/Economics and Statistics and Data Science.
 
-```{r}
-1 + 3
-```
+I have a strong foundation in both mathematical theory and statistical analysis, which can be extremely helpful in solving real-world problems today. My passions involve data and statistical analysis in economic issues, especially those regarding education and international relations.
 
-```{r}
-runif(10)
-```
+## Resume
+
+To learn more about my work and experience, check out my resume by clicking [here](https://drive.google.com/file/d/1-Si7o4HFs7psQK-WeiEFmK-VWliTtAAP/view?usp=sharing).
+
+## Education
+
+*University of California, Los Angeles*  
+B.S. in Mathematics/Economics  
+B.S. in Statistics and Data Science  
+September 2021 - June 2025
+
+## Leadership and Experience
+
+[**Project HOPE**](https://www.uclaprojecthope.com/) **Intern** | UCLA | January 2022 - June 2022  
+[**Project HOPE**](https://www.uclaprojecthope.com/) **Volunteer** | UCLA | September 2022 - Present  
+**High School Conference Parent Coordinator** | UCLA Vietnamese Student Union | September 2024 - November 2024  
+**Student Experience Weekend Hosted by Southeast Asian Coaliation Housing Coordinator** | UCLA Vietnamese Student Union | January 2025 - Present

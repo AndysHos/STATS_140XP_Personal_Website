@@ -1,0 +1,13 @@
+---
+title: "World Happiness"
+image: happiness.jpg
+format: html
+---
+
+The project analyzes the factors influencing happiness across nations using data from the 2019 World Happiness Report. The dataset consists of 156 countries and includes six predictor variables—GDP per capita, social support, healthy life expectancy, freedom to make life choices, generosity, and perceptions of corruption—along with the overall happiness score as the response variable. The study begins with exploratory data analysis, examining summary statistics, distributions, and correlations among variables. Strong correlations between GDP per capita, social support, and healthy life expectancy suggest the need to address potential multicollinearity. To ensure normality, transformations such as the Box-Cox method were applied before proceeding with model selection.
+
+The study initially employs multiple linear regression with all six predictors, but diagnostic tests reveal issues with residual normality and non-significant predictors. Several model selection techniques, including forward and backward stepwise regression and subset selection, are used to refine the model. The final model retains four significant predictors: GDP per capita, social support, healthy life expectancy, and freedom to make life choices. The model achieves an R² of 0.79, indicating strong explanatory power, and diagnostic tests confirm that assumptions of linear regression are satisfied. The analysis finds that generosity and perceptions of corruption are not significant contributors to happiness, suggesting that economic and social stability play a more direct role in overall well-being.
+
+The findings align with existing research on happiness, demonstrating that economic prosperity, social support, health, and personal freedom significantly impact life satisfaction.
+
+<iframe src="Stats101A-Happiness-Report.pdf" width="100%" height="600px"></iframe>

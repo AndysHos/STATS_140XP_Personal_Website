@@ -1,0 +1,22 @@
+---
+toc: false
+listing:
+  - id: project-listings
+    contents:
+      - "/projects/*.qmd"
+    sort: false
+    sort-ui: false
+    filter-ui: false
+    type: grid
+    fields: 
+      - title
+      - image
+    categories: false
+---
+
+## Projects
+
+Here are some of the projects that I have completed throughout my time studying at UCLA. All of these projects either involve statistical modeling, data analysis, or machine learning. All of the projects use either R code or Python code.
+
+:::project-listing
+:::

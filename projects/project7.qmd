@@ -1,0 +1,13 @@
+---
+title: "Image Classification"
+image: catsdogs.jpg
+format: html
+---
+
+This project focuses on image classification using deep learning techniques to distinguish between images of cats and dogs. The study employs the Keras library with TensorFlow backend, utilizing convolutional neural networks (CNNs) for feature extraction and classification. The dataset, sourced from TensorFlow Datasets (TFDS), is split into training, validation, and test sets, with preprocessing steps including resizing, normalization, and data augmentation. The baseline model, a simple CNN with three convolutional layers and max pooling, achieved moderate performance but exhibited signs of overfitting. To improve generalization, additional techniques such as dropout layers and data augmentation were implemented to enhance the model’s robustness.
+
+Building upon the baseline model, the study explores multiple approaches to optimize classification performance. A refined model incorporating data augmentation layers significantly improved validation accuracy, demonstrating the benefits of training on varied data representations. Further enhancements involved the integration of transfer learning, leveraging MobileNetV3Large, a pre-trained model on the ImageNet dataset. By freezing the convolutional base and training only the final classification layers, this approach drastically improved accuracy while reducing training time. The final model achieved a validation accuracy of approximately 94%, outperforming previous iterations and confirming the effectiveness of transfer learning in image classification tasks.
+
+The study concludes by evaluating the model’s performance on a separate test dataset, where it maintained a high accuracy level, indicating strong generalization capabilities. Comparisons between the baseline, augmented, and transfer learning models underscore the importance of model selection, data preprocessing, and augmentation techniques in improving classification accuracy. The project highlights the efficiency of transfer learning in deep learning applications, demonstrating that pre-trained models can significantly enhance performance in tasks with limited labeled data.
+
+<iframe src="image-classification.pdf" width="100%" height="600px"></iframe>

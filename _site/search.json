@@ -7,10 +7,101 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Andy Ho",
+    "section": "",
+    "text": "Here are some of the projects that I have completed throughout my time studying at UCLA. All of these projects either involve statistical modeling, data analysis, or machine learning. All of the projects use either R code or Python code."
+  },
+  {
+    "objectID": "projects.html#projects",
+    "href": "projects.html#projects",
+    "title": "Andy Ho",
+    "section": "",
+    "text": "Here are some of the projects that I have completed throughout my time studying at UCLA. All of these projects either involve statistical modeling, data analysis, or machine learning. All of the projects use either R code or Python code."
+  },
+  {
+    "objectID": "projects/project2.html",
+    "href": "projects/project2.html",
+    "title": "Solar Radiation and Climate Change",
+    "section": "",
+    "text": "This project explores the relationship between solar radiation and climate change, focusing on data collected from Zhongshan Station in Antarctica. Solar radiation, a key driver of Earth’s climate, influences temperature, wind patterns, and atmospheric composition. The study examines long-term trends in daily global solar radiation (DGSR) from 1989 to 2020 and incorporates solar radio flux (10.7 cm) as a proxy for solar activity. By analyzing seasonal and long-term variations in solar radiation, the project aims to assess whether increasing solar radiation contributes to climate change and if seasonal fluctuations indicate potential periods of intensified climate impacts.\nTo analyze the data, the study employs various time-series techniques, including ARIMA models for forecasting trends and seasonality. The results reveal that solar radiation exhibits strong seasonal patterns but does not show a significant long-term increasing trend. In contrast, solar radio flux demonstrates a slight decreasing trend, suggesting that solar activity may not be directly intensifying over time. The project also uses vector autoregression (VAR) modeling to assess interactions between DGSR and solar radio flux. Granger causality tests suggest that DGSR influences solar radio flux but not vice versa, indicating a potential lagged relationship between radiation levels and solar activity.\nThe forecasting component evaluates the accuracy of different models, comparing seasonal ARIMA, automatic ARIMA, and VAR forecasts. The results show that all models perform similarly in predicting future solar radiation and radio flux trends, with seasonal components remaining the dominant factor. While the study does not find evidence of increasing solar radiation over time, it underscores the importance of monitoring seasonal variations, which could have localized effects on climate patterns. Future research could integrate additional climate variables, such as temperature and greenhouse gas concentrations, to refine the understanding of how solar radiation interacts with global climate change."
+  },
+  {
+    "objectID": "projects/project5.html",
+    "href": "projects/project5.html",
+    "title": "2020 Eletion Demographics",
+    "section": "",
+    "text": "The project focuses on classification modeling to predict the winner of the 2020 U.S. Presidential Election based on demographic data from 3,111 counties. The dataset includes key predictors such as median age, Cuban population, urbanization levels, Asian population, and educational attainment. Exploratory data analysis revealed notable trends, including a higher median age for Trump voters, stronger support for Biden in urban areas, and higher levels of education correlating with Biden’s victories. Data preprocessing steps included normalizing numeric predictors, encoding categorical variables into dummy variables, addressing multicollinearity by removing highly correlated features, and imputing missing values using median imputation.\nMultiple classification models were tested, including decision trees, logistic regression, and random forests. Each model underwent hyperparameter tuning and cross-validation to optimize accuracy. The decision tree models provided interpretability but had lower accuracy. Logistic regression models were simple and efficient but lacked flexibility in handling complex relationships. The random forest model, implemented using the “ranger” engine, outperformed the others with an accuracy of approximately 90.7%. This model leveraged multiple decision trees to enhance predictive power while mitigating overfitting. Logarithmic transformations were applied to right-skewed features, and interaction terms were explored to capture deeper relationships within the data.\nThe final model selection favored the random forest approach due to its superior performance in handling large, complex datasets."
+  },
+  {
+    "objectID": "projects/project6.html",
+    "href": "projects/project6.html",
+    "title": "Heat Diffusion",
+    "section": "",
+    "text": "This project explores different methods for simulating heat diffusion in a two-dimensional space using Python. Heat diffusion is modeled using the heat equation, which describes how temperature spreads over time. The study utilizes matrix-based approaches to compute temperature updates at each grid point, incorporating finite difference methods. The primary goal is to compare the computational efficiency and accuracy of various implementations, including traditional matrix multiplication, sparse matrix representations, and high-performance computing techniques. Visualization through heatmaps allows for an intuitive understanding of how temperature propagates through the simulated environment.\nFour different methods are tested: matrix multiplication, sparse matrix operations using JAX, direct computation using NumPy, and JAX’s just-in-time (JIT) compiled approach. The standard matrix multiplication method provides a baseline but is computationally expensive, taking approximately 95 seconds for a given simulation. The sparse matrix method with JAX improves efficiency significantly, reducing execution time to around 7.66 seconds. The NumPy implementation, leveraging array-based operations, further accelerates performance to 0.74 seconds. Finally, the JAX JIT-compiled approach is the fastest, reducing computation time to approximately 0.44 seconds, nearly twice as fast as the NumPy method. The study highlights how different numerical techniques and hardware acceleration can drastically enhance performance in large-scale simulations.\nThe findings suggest that JAX’s JIT compilation is the most efficient method for heat diffusion simulations, making it an optimal choice for large-scale computational tasks. While NumPy provides a simple and efficient approach, JAX offers better scalability and performance for repeated simulations. Sparse matrix operations also prove beneficial, particularly in reducing unnecessary computations in large grid-based models."
+  },
+  {
+    "objectID": "projects/project7.html",
+    "href": "projects/project7.html",
+    "title": "Image Classification",
+    "section": "",
+    "text": "This project focuses on image classification using deep learning techniques to distinguish between images of cats and dogs. The study employs the Keras library with TensorFlow backend, utilizing convolutional neural networks (CNNs) for feature extraction and classification. The dataset, sourced from TensorFlow Datasets (TFDS), is split into training, validation, and test sets, with preprocessing steps including resizing, normalization, and data augmentation. The baseline model, a simple CNN with three convolutional layers and max pooling, achieved moderate performance but exhibited signs of overfitting. To improve generalization, additional techniques such as dropout layers and data augmentation were implemented to enhance the model’s robustness.\nBuilding upon the baseline model, the study explores multiple approaches to optimize classification performance. A refined model incorporating data augmentation layers significantly improved validation accuracy, demonstrating the benefits of training on varied data representations. Further enhancements involved the integration of transfer learning, leveraging MobileNetV3Large, a pre-trained model on the ImageNet dataset. By freezing the convolutional base and training only the final classification layers, this approach drastically improved accuracy while reducing training time. The final model achieved a validation accuracy of approximately 94%, outperforming previous iterations and confirming the effectiveness of transfer learning in image classification tasks.\nThe study concludes by evaluating the model’s performance on a separate test dataset, where it maintained a high accuracy level, indicating strong generalization capabilities. Comparisons between the baseline, augmented, and transfer learning models underscore the importance of model selection, data preprocessing, and augmentation techniques in improving classification accuracy. The project highlights the efficiency of transfer learning in deep learning applications, demonstrating that pre-trained models can significantly enhance performance in tasks with limited labeled data."
+  },
+  {
+    "objectID": "projects/project4.html",
+    "href": "projects/project4.html",
+    "title": "World Happiness",
+    "section": "",
+    "text": "The project analyzes the factors influencing happiness across nations using data from the 2019 World Happiness Report. The dataset consists of 156 countries and includes six predictor variables—GDP per capita, social support, healthy life expectancy, freedom to make life choices, generosity, and perceptions of corruption—along with the overall happiness score as the response variable. The study begins with exploratory data analysis, examining summary statistics, distributions, and correlations among variables. Strong correlations between GDP per capita, social support, and healthy life expectancy suggest the need to address potential multicollinearity. To ensure normality, transformations such as the Box-Cox method were applied before proceeding with model selection.\nThe study initially employs multiple linear regression with all six predictors, but diagnostic tests reveal issues with residual normality and non-significant predictors. Several model selection techniques, including forward and backward stepwise regression and subset selection, are used to refine the model. The final model retains four significant predictors: GDP per capita, social support, healthy life expectancy, and freedom to make life choices. The model achieves an R² of 0.79, indicating strong explanatory power, and diagnostic tests confirm that assumptions of linear regression are satisfied. The analysis finds that generosity and perceptions of corruption are not significant contributors to happiness, suggesting that economic and social stability play a more direct role in overall well-being.\nThe findings align with existing research on happiness, demonstrating that economic prosperity, social support, health, and personal freedom significantly impact life satisfaction."
+  },
+  {
+    "objectID": "projects/project1.html",
+    "href": "projects/project1.html",
+    "title": "Air Quality in Seoul",
+    "section": "",
+    "text": "This project investigates air quality in Seoul, focusing on the Nowon-gu district, using data from AirKorea, a South Korean company specializing in air pollution monitoring. The study specifically examines PM2.5 and PM10 levels, which are critical indicators of air pollution that can significantly impact respiratory health. Data spanning from January 2015 to January 2022 was analyzed on a monthly basis to understand trends and variations in air quality. The study aims to determine the patterns of particulate matter concentration and provide insights into how air pollution fluctuates over time, particularly in highly populated areas like Nowon-gu.\nTo analyze the data, the project employs time-series modeling and decomposition techniques. Various statistical models, including linear and nonlinear approaches, were tested to determine the best fit for forecasting future pollution levels. The study assesses the stationarity of the data through autocorrelation and partial autocorrelation functions (ACF and PACF), revealing that PM2.5 levels exhibit periodic fluctuations rather than a linear trend. The project finds that a nonlinear model using multiplicative decomposition captures seasonal variations more effectively than an additive approach. Winter months show higher PM2.5 concentrations, while summer months, especially August, exhibit lower pollution levels.\nThe forecasting component extends the analysis by predicting future air quality trends for the next 12 months, incorporating seasonal adjustments. While the selected model performs well, residual analysis suggests that additional refinements could improve prediction accuracy, such as accounting for longer-term cycles or expanding the dataset. Future work could enhance the model by integrating more historical data or employing advanced machine learning techniques to refine predictions. The study underscores the importance of continuous air quality monitoring to inform policy decisions aimed at reducing pollution and mitigating health risks for residents in Seoul."
+  },
+  {
+    "objectID": "projects/project3.html",
+    "href": "projects/project3.html",
+    "title": "Education in The Gambia",
+    "section": "",
+    "text": "The project examines the education system in The Gambia, focusing on government expenditure on education as a percentage of GDP and primary school enrollment rates. The study highlights significant challenges, including resource constraints, gender disparities, and the impact of social norms on school attendance. Despite the government’s initiatives, such as abolishing school fees for primary education and increasing education funding, hidden costs and inadequate infrastructure continue to hinder access to quality education. The dataset, sourced from the World Bank, spans from 1999 to 2023, allowing for an analysis of long-term trends in education funding and enrollment rates.\nTo analyze the data, the study employs various statistical techniques, including ARIMA models for individual time-series forecasting and a Vector Autoregressive (VAR) model to examine the relationship between the two key variables. The results reveal that both government expenditure and primary school enrollment exhibit upward trends over time, with significant improvements observed in the 2010s. The VAR model suggests that government spending positively influences school enrollment, but the reverse relationship is not statistically significant. Impulse response functions further confirm that increases in education funding lead to higher enrollment rates over time, while enrollment shocks do not significantly impact government expenditure.\nThe study also evaluates multiple forecasting models, including ETS, Holt-Winters, NNETAR, and the Prophet model, to determine the most effective approach for predicting future trends. The Prophet model outperforms other methods in terms of accuracy, capturing the upward trajectory of both government expenditure and enrollment. However, the results highlight the growing uncertainty in long-term predictions, emphasizing the need for continuous monitoring and policy adjustments. The study concludes that sustained investment in education is essential for long-term improvements and suggests incorporating additional variables, such as teacher-student ratios and literacy rates, for a more comprehensive analysis."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Andy Ho",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 3\n\n[1] 4\n\n\n\nrunif(10)\n\n [1] 0.57286052 0.89899115 0.92367637 0.63138562 0.28522297 0.87114579\n [7] 0.18797538 0.09126978 0.23397419 0.50841905"
+    "text": "My name is Andy Ho, and I am currently a fourth-year undergraduate student at UCLA. I am currently pursuing a double major in both Mathematics/Economics and Statistics and Data Science.\nI have a strong foundation in both mathematical theory and statistical analysis, which can be extremely helpful in solving real-world problems today. My passions involve data and statistical analysis in economic issues, especially those regarding education and international relations."
+  },
+  {
+    "objectID": "index.html#hello",
+    "href": "index.html#hello",
+    "title": "Andy Ho",
+    "section": "",
+    "text": "My name is Andy Ho, and I am currently a fourth-year undergraduate student at UCLA. I am currently pursuing a double major in both Mathematics/Economics and Statistics and Data Science.\nI have a strong foundation in both mathematical theory and statistical analysis, which can be extremely helpful in solving real-world problems today. My passions involve data and statistical analysis in economic issues, especially those regarding education and international relations."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Andy Ho",
+    "section": "Education",
+    "text": "Education\nUniversity of California, Los Angeles\nB.S. in Mathematics/Economics\nB.S. in Statistics and Data Science\nSeptember 2021 - June 2025"
+  },
+  {
+    "objectID": "index.html#leadership-and-experience",
+    "href": "index.html#leadership-and-experience",
+    "title": "Andy Ho",
+    "section": "Leadership and Experience",
+    "text": "Leadership and Experience\nProject HOPE Intern | UCLA | January 2022 - June 2022\nProject HOPE Volunteer | UCLA | September 2022 - Present\nHigh School Conference Parent Coordinator | UCLA Vietnamese Student Union | September 2024 - November 2024\nStudent Experience Weekend Hosted by Southeast Asian Coaliation Housing Coordinator | UCLA Vietnamese Student Union | January 2025 - Present"
+  },
+  {
+    "objectID": "index.html#resume",
+    "href": "index.html#resume",
+    "title": "Andy Ho",
+    "section": "Resume",
+    "text": "Resume\nTo learn more about my work and experience, check out my resume by clicking here."
   }
 ]

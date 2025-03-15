@@ -1,0 +1,13 @@
+---
+title: "Solar Radiation and Climate Change"
+image: solarradiation.jpg
+format: html
+---
+
+This project explores the relationship between solar radiation and climate change, focusing on data collected from Zhongshan Station in Antarctica. Solar radiation, a key driver of Earth's climate, influences temperature, wind patterns, and atmospheric composition. The study examines long-term trends in daily global solar radiation (DGSR) from 1989 to 2020 and incorporates solar radio flux (10.7 cm) as a proxy for solar activity. By analyzing seasonal and long-term variations in solar radiation, the project aims to assess whether increasing solar radiation contributes to climate change and if seasonal fluctuations indicate potential periods of intensified climate impacts.
+
+To analyze the data, the study employs various time-series techniques, including ARIMA models for forecasting trends and seasonality. The results reveal that solar radiation exhibits strong seasonal patterns but does not show a significant long-term increasing trend. In contrast, solar radio flux demonstrates a slight decreasing trend, suggesting that solar activity may not be directly intensifying over time. The project also uses vector autoregression (VAR) modeling to assess interactions between DGSR and solar radio flux. Granger causality tests suggest that DGSR influences solar radio flux but not vice versa, indicating a potential lagged relationship between radiation levels and solar activity.
+
+The forecasting component evaluates the accuracy of different models, comparing seasonal ARIMA, automatic ARIMA, and VAR forecasts. The results show that all models perform similarly in predicting future solar radiation and radio flux trends, with seasonal components remaining the dominant factor. While the study does not find evidence of increasing solar radiation over time, it underscores the importance of monitoring seasonal variations, which could have localized effects on climate patterns. Future research could integrate additional climate variables, such as temperature and greenhouse gas concentrations, to refine the understanding of how solar radiation interacts with global climate change.
+
+<iframe src="Solar-Radiation-and-Climate-Change.pdf" width="100%" height="600px"></iframe>

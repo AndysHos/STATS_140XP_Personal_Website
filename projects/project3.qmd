@@ -1,0 +1,13 @@
+---
+title: "Education in The Gambia"
+image: gambia.png
+format: html
+---
+
+The project examines the education system in The Gambia, focusing on government expenditure on education as a percentage of GDP and primary school enrollment rates. The study highlights significant challenges, including resource constraints, gender disparities, and the impact of social norms on school attendance. Despite the government's initiatives, such as abolishing school fees for primary education and increasing education funding, hidden costs and inadequate infrastructure continue to hinder access to quality education. The dataset, sourced from the World Bank, spans from 1999 to 2023, allowing for an analysis of long-term trends in education funding and enrollment rates.
+
+To analyze the data, the study employs various statistical techniques, including ARIMA models for individual time-series forecasting and a Vector Autoregressive (VAR) model to examine the relationship between the two key variables. The results reveal that both government expenditure and primary school enrollment exhibit upward trends over time, with significant improvements observed in the 2010s. The VAR model suggests that government spending positively influences school enrollment, but the reverse relationship is not statistically significant. Impulse response functions further confirm that increases in education funding lead to higher enrollment rates over time, while enrollment shocks do not significantly impact government expenditure.
+
+The study also evaluates multiple forecasting models, including ETS, Holt-Winters, NNETAR, and the Prophet model, to determine the most effective approach for predicting future trends. The Prophet model outperforms other methods in terms of accuracy, capturing the upward trajectory of both government expenditure and enrollment. However, the results highlight the growing uncertainty in long-term predictions, emphasizing the need for continuous monitoring and policy adjustments. The study concludes that sustained investment in education is essential for long-term improvements and suggests incorporating additional variables, such as teacher-student ratios and literacy rates, for a more comprehensive analysis.
+
+<iframe src="Education-in-The-Gambia.pdf" width="100%" height="600px"></iframe>
